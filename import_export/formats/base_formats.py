@@ -186,7 +186,7 @@ class XLSX(TablibFormat):
 
         for row in rows:
             row_values = [cell.value for cell in row]
-            if any(row):
+            if any(row_values):
                 dataset.append(row_values)
         return dataset
 
